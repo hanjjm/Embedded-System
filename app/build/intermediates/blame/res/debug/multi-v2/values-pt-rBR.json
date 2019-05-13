@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/kimhanju/AndroidStudioProjects/Warmer/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-pt-rBR/values-pt-rBR.xml",
+            "outputFile": "/Users/kimhanju/Desktop/Project/Warmer/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-pt-rBR/values-pt-rBR.xml",
             "map": [
                 {
                     "source": "/Users/kimhanju/.gradle/caches/transforms-2/files-2.1/62a57ba17d7d16033bb99ad767f4823d/res/values-pt-rBR/values-pt-rBR.xml",

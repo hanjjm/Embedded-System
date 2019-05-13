@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/kimhanju/AndroidStudioProjects/Warmer/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-large-v4/values-large-v4.xml",
+            "outputFile": "/Users/kimhanju/Desktop/Project/Warmer/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-large-v4/values-large-v4.xml",
             "map": [
                 {
                     "source": "/Users/kimhanju/.gradle/caches/transforms-2/files-2.1/6d2125ed9e7c7554f58776d5ffe741a0/res/values-large-v4/values-large-v4.xml",
