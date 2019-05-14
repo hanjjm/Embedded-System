@@ -680,6 +680,9 @@ id barrier
 id beginning
 id blocking
 id bottom
+id button4
+id button5
+id button6
 id buttonPanel
 id center
 id center_horizontal
@@ -716,10 +719,10 @@ id icon
 id icon_group
 id ifRoom
 id image
-id imageView
-id imageView2
-id imageView3
-id imageView4
+id imageView5
+id imageView6
+id imageView7
+id imageView9
 id info
 id invisible
 id italic
