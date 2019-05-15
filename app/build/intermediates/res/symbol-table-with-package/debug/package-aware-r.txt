@@ -680,9 +680,6 @@ id barrier
 id beginning
 id blocking
 id bottom
-id button4
-id button5
-id button6
 id buttonPanel
 id center
 id center_horizontal
@@ -741,6 +738,9 @@ id notification_background
 id notification_main_column
 id notification_main_column_container
 id packed
+id pad1
+id pad2
+id pad3
 id parent
 id parentPanel
 id percent
