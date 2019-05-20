@@ -9,7 +9,10 @@ import android.support.design.widget.TabLayout.TabLayoutOnPageChangeListener;
 import android.support.design.widget.TabLayout;
 
 
+
 public class MainActivity extends AppCompatActivity implements Tab1.OnFragmentInteractionListener, Tab2.OnFragmentInteractionListener, Tab3.OnFragmentInteractionListener{
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

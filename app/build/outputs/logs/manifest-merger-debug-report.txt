@@ -1,13 +1,14 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/kimhanju/Desktop/IronHeater/app/src/main/AndroidManifest.xml:2:1-21:12
-INJECTED from /Users/kimhanju/Desktop/IronHeater/app/src/main/AndroidManifest.xml:2:1-21:12
-INJECTED from /Users/kimhanju/Desktop/IronHeater/app/src/main/AndroidManifest.xml:2:1-21:12
-INJECTED from /Users/kimhanju/Desktop/IronHeater/app/src/main/AndroidManifest.xml:2:1-21:12
+ADDED from /Users/kimhanju/Desktop/IronHeater/app/src/main/AndroidManifest.xml:2:1-25:12
+INJECTED from /Users/kimhanju/Desktop/IronHeater/app/src/main/AndroidManifest.xml:2:1-25:12
+INJECTED from /Users/kimhanju/Desktop/IronHeater/app/src/main/AndroidManifest.xml:2:1-25:12
+INJECTED from /Users/kimhanju/Desktop/IronHeater/app/src/main/AndroidManifest.xml:2:1-25:12
 MERGED from [com.android.support:design:28.0.0-alpha3] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/131bc39186a602cdaac2666cbe04b56b/AndroidManifest.xml:17:1-24:12
 MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/6d2125ed9e7c7554f58776d5ffe741a0/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support.constraint:constraint-layout:1.1.2] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/ed513cdef3cc6b9b90c1b0dfb9210a7d/AndroidManifest.xml:2:1-11:12
 MERGED from [com.android.support:support-v4:28.0.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/1cdcecfabc83022f9807a239c153bf6d/AndroidManifest.xml:17:1-22:12
+MERGED from [com.akexorcist:bluetoothspp:1.0.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/d0f9a7674935bebbb161d8383252f06e/AndroidManifest.xml:2:1-14:12
 MERGED from [com.android.support:support-fragment:28.0.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/52e45f2a34e90631a7d6cbb0d8d02770/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/3edefa734533547a86d1ba124d4ebaf2/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:recyclerview-v7:28.0.0-alpha3] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/64e77dffbbc9cd03109350a7b8f12b5f/AndroidManifest.xml:17:1-22:12
@@ -37,29 +38,43 @@ MERGED from [com.android.support:interpolator:28.0.0] /Users/kimhanju/.gradle/ca
 MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/3c2b350df0269ab6b75fec032f3b6c54/AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/bd7460437525a3233336f491871872f5/AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.core:runtime:1.1.1] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/2ab91e5d6f08770f9548b89c0d4bb82b/AndroidManifest.xml:17:1-22:12
-INJECTED from /Users/kimhanju/Desktop/IronHeater/app/src/main/AndroidManifest.xml:2:1-21:12
-INJECTED from /Users/kimhanju/Desktop/IronHeater/app/src/main/AndroidManifest.xml:2:1-21:12
-INJECTED from /Users/kimhanju/Desktop/IronHeater/app/src/main/AndroidManifest.xml:2:1-21:12
+INJECTED from /Users/kimhanju/Desktop/IronHeater/app/src/main/AndroidManifest.xml:2:1-25:12
+INJECTED from /Users/kimhanju/Desktop/IronHeater/app/src/main/AndroidManifest.xml:2:1-25:12
+INJECTED from /Users/kimhanju/Desktop/IronHeater/app/src/main/AndroidManifest.xml:2:1-25:12
 	package
 		ADDED from /Users/kimhanju/Desktop/IronHeater/app/src/main/AndroidManifest.xml:3:5-37
 		INJECTED from /Users/kimhanju/Desktop/IronHeater/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/kimhanju/Desktop/IronHeater/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /Users/kimhanju/Desktop/IronHeater/app/src/main/AndroidManifest.xml
-		ADDED from /Users/kimhanju/Desktop/IronHeater/app/src/main/AndroidManifest.xml:2:1-21:12
+		ADDED from /Users/kimhanju/Desktop/IronHeater/app/src/main/AndroidManifest.xml:2:1-25:12
 		INJECTED from /Users/kimhanju/Desktop/IronHeater/app/src/main/AndroidManifest.xml
 	android:versionCode
 		INJECTED from /Users/kimhanju/Desktop/IronHeater/app/src/main/AndroidManifest.xml
-		ADDED from /Users/kimhanju/Desktop/IronHeater/app/src/main/AndroidManifest.xml:2:1-21:12
+		ADDED from /Users/kimhanju/Desktop/IronHeater/app/src/main/AndroidManifest.xml:2:1-25:12
 		INJECTED from /Users/kimhanju/Desktop/IronHeater/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /Users/kimhanju/Desktop/IronHeater/app/src/main/AndroidManifest.xml:2:11-69
+uses-permission#android.permission.BLUETOOTH
+ADDED from /Users/kimhanju/Desktop/IronHeater/app/src/main/AndroidManifest.xml:5:5-68
+MERGED from [com.akexorcist:bluetoothspp:1.0.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/d0f9a7674935bebbb161d8383252f06e/AndroidManifest.xml:7:5-68
+MERGED from [com.akexorcist:bluetoothspp:1.0.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/d0f9a7674935bebbb161d8383252f06e/AndroidManifest.xml:7:5-68
+	android:name
+		ADDED from /Users/kimhanju/Desktop/IronHeater/app/src/main/AndroidManifest.xml:5:22-65
+uses-permission#android.permission.BLUETOOTH_ADMIN
+ADDED from /Users/kimhanju/Desktop/IronHeater/app/src/main/AndroidManifest.xml:6:5-74
+MERGED from [com.akexorcist:bluetoothspp:1.0.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/d0f9a7674935bebbb161d8383252f06e/AndroidManifest.xml:8:5-74
+MERGED from [com.akexorcist:bluetoothspp:1.0.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/d0f9a7674935bebbb161d8383252f06e/AndroidManifest.xml:8:5-74
+	android:name
+		ADDED from /Users/kimhanju/Desktop/IronHeater/app/src/main/AndroidManifest.xml:6:22-71
 application
-ADDED from /Users/kimhanju/Desktop/IronHeater/app/src/main/AndroidManifest.xml:5:5-19:19
+ADDED from /Users/kimhanju/Desktop/IronHeater/app/src/main/AndroidManifest.xml:8:5-22:19
 MERGED from [com.android.support:design:28.0.0-alpha3] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/131bc39186a602cdaac2666cbe04b56b/AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:design:28.0.0-alpha3] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/131bc39186a602cdaac2666cbe04b56b/AndroidManifest.xml:22:5-20
 MERGED from [com.android.support.constraint:constraint-layout:1.1.2] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/ed513cdef3cc6b9b90c1b0dfb9210a7d/AndroidManifest.xml:9:5-20
 MERGED from [com.android.support.constraint:constraint-layout:1.1.2] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/ed513cdef3cc6b9b90c1b0dfb9210a7d/AndroidManifest.xml:9:5-20
+MERGED from [com.akexorcist:bluetoothspp:1.0.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/d0f9a7674935bebbb161d8383252f06e/AndroidManifest.xml:10:5-12:19
+MERGED from [com.akexorcist:bluetoothspp:1.0.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/d0f9a7674935bebbb161d8383252f06e/AndroidManifest.xml:10:5-12:19
 MERGED from [com.android.support:support-compat:28.0.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/62a57ba17d7d16033bb99ad767f4823d/AndroidManifest.xml:22:5-94
 MERGED from [com.android.support:support-compat:28.0.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/62a57ba17d7d16033bb99ad767f4823d/AndroidManifest.xml:22:5-94
 MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/bb7f90788dbac728d8c11ca4d7a3d77f/AndroidManifest.xml:22:5-23:19
@@ -67,31 +82,31 @@ MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/kimhanju/.gr
 	android:appComponentFactory
 		ADDED from [com.android.support:support-compat:28.0.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/62a57ba17d7d16033bb99ad767f4823d/AndroidManifest.xml:22:18-91
 	android:supportsRtl
-		ADDED from /Users/kimhanju/Desktop/IronHeater/app/src/main/AndroidManifest.xml:10:9-35
+		ADDED from /Users/kimhanju/Desktop/IronHeater/app/src/main/AndroidManifest.xml:13:9-35
 	android:label
-		ADDED from /Users/kimhanju/Desktop/IronHeater/app/src/main/AndroidManifest.xml:8:9-41
+		ADDED from /Users/kimhanju/Desktop/IronHeater/app/src/main/AndroidManifest.xml:11:9-41
 	android:roundIcon
-		ADDED from /Users/kimhanju/Desktop/IronHeater/app/src/main/AndroidManifest.xml:9:9-54
+		ADDED from /Users/kimhanju/Desktop/IronHeater/app/src/main/AndroidManifest.xml:12:9-54
 	android:icon
-		ADDED from /Users/kimhanju/Desktop/IronHeater/app/src/main/AndroidManifest.xml:7:9-43
+		ADDED from /Users/kimhanju/Desktop/IronHeater/app/src/main/AndroidManifest.xml:10:9-43
 	android:allowBackup
-		ADDED from /Users/kimhanju/Desktop/IronHeater/app/src/main/AndroidManifest.xml:6:9-35
+		ADDED from /Users/kimhanju/Desktop/IronHeater/app/src/main/AndroidManifest.xml:9:9-35
 	android:theme
-		ADDED from /Users/kimhanju/Desktop/IronHeater/app/src/main/AndroidManifest.xml:11:9-40
+		ADDED from /Users/kimhanju/Desktop/IronHeater/app/src/main/AndroidManifest.xml:14:9-40
 activity#com.example.ironheater.MainActivity
-ADDED from /Users/kimhanju/Desktop/IronHeater/app/src/main/AndroidManifest.xml:12:9-18:20
+ADDED from /Users/kimhanju/Desktop/IronHeater/app/src/main/AndroidManifest.xml:15:9-21:20
 	android:name
-		ADDED from /Users/kimhanju/Desktop/IronHeater/app/src/main/AndroidManifest.xml:12:19-47
+		ADDED from /Users/kimhanju/Desktop/IronHeater/app/src/main/AndroidManifest.xml:15:19-47
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/kimhanju/Desktop/IronHeater/app/src/main/AndroidManifest.xml:13:13-17:29
+ADDED from /Users/kimhanju/Desktop/IronHeater/app/src/main/AndroidManifest.xml:16:13-20:29
 action#android.intent.action.MAIN
-ADDED from /Users/kimhanju/Desktop/IronHeater/app/src/main/AndroidManifest.xml:14:17-69
+ADDED from /Users/kimhanju/Desktop/IronHeater/app/src/main/AndroidManifest.xml:17:17-69
 	android:name
-		ADDED from /Users/kimhanju/Desktop/IronHeater/app/src/main/AndroidManifest.xml:14:25-66
+		ADDED from /Users/kimhanju/Desktop/IronHeater/app/src/main/AndroidManifest.xml:17:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/kimhanju/Desktop/IronHeater/app/src/main/AndroidManifest.xml:16:17-77
+ADDED from /Users/kimhanju/Desktop/IronHeater/app/src/main/AndroidManifest.xml:19:17-77
 	android:name
-		ADDED from /Users/kimhanju/Desktop/IronHeater/app/src/main/AndroidManifest.xml:16:27-74
+		ADDED from /Users/kimhanju/Desktop/IronHeater/app/src/main/AndroidManifest.xml:19:27-74
 uses-sdk
 INJECTED from /Users/kimhanju/Desktop/IronHeater/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/kimhanju/Desktop/IronHeater/app/src/main/AndroidManifest.xml
@@ -172,3 +187,13 @@ INJECTED from /Users/kimhanju/Desktop/IronHeater/app/src/main/AndroidManifest.xm
 		INJECTED from /Users/kimhanju/Desktop/IronHeater/app/src/main/AndroidManifest.xml
 		ADDED from /Users/kimhanju/Desktop/IronHeater/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/kimhanju/Desktop/IronHeater/app/src/main/AndroidManifest.xml
+activity#app.akexorcist.bluetotohspp.library.DeviceList
+ADDED from [com.akexorcist:bluetoothspp:1.0.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/d0f9a7674935bebbb161d8383252f06e/AndroidManifest.xml:11:9-83
+	android:name
+		ADDED from [com.akexorcist:bluetoothspp:1.0.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/d0f9a7674935bebbb161d8383252f06e/AndroidManifest.xml:11:19-80
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+IMPLIED from /Users/kimhanju/Desktop/IronHeater/app/src/main/AndroidManifest.xml:2:1-25:12 reason: app.akexorcist.bluetotohspp.library has a targetSdkVersion < 4
+uses-permission#android.permission.READ_PHONE_STATE
+IMPLIED from /Users/kimhanju/Desktop/IronHeater/app/src/main/AndroidManifest.xml:2:1-25:12 reason: app.akexorcist.bluetotohspp.library has a targetSdkVersion < 4
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+IMPLIED from /Users/kimhanju/Desktop/IronHeater/app/src/main/AndroidManifest.xml:2:1-25:12 reason: app.akexorcist.bluetotohspp.library requested WRITE_EXTERNAL_STORAGE

@@ -1,15 +1,23 @@
 package com.example.ironheater;
 
+import android.app.Activity;
+import android.bluetooth.BluetoothAdapter;
 import android.content.Context;
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.SeekBar;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import app.akexorcist.bluetotohspp.library.BluetoothSPP;
+import app.akexorcist.bluetotohspp.library.BluetoothState;
+import app.akexorcist.bluetotohspp.library.DeviceList;
 
 
 /**
@@ -25,6 +33,7 @@ public class Tab1 extends Fragment {
     SeekBar mSeekBar;
     TextView mTxtValue;
     String value;
+    private BluetoothSPP bt;
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -62,7 +71,7 @@ public class Tab1 extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
+        bt = new BluetoothSPP(getContext()); //Initializing
 
         if (getArguments() != null) {
             mParam1 = getArguments().getString(ARG_PARAM1);
@@ -105,8 +114,102 @@ public class Tab1 extends Fragment {
             }
         });
 
+
+        bt.setOnDataReceivedListener(new BluetoothSPP.OnDataReceivedListener() {
+            @Override
+            public void onDataReceived(byte[] data, String message) {
+                Toast.makeText(getContext(), message, Toast.LENGTH_SHORT);  //수신한 데이터
+            }
+        });
+
+
+        bt.setBluetoothConnectionListener(new BluetoothSPP.BluetoothConnectionListener() {
+            @Override
+            public void onDeviceConnected(String name, String address) {
+                Toast.makeText(getContext(), "블루투스 연결 성공", Toast.LENGTH_SHORT);
+            }
+
+            @Override
+            public void onDeviceDisconnected() {
+                Toast.makeText(getContext(), "블루투스 연결 해제", Toast.LENGTH_SHORT);
+            }
+
+            @Override
+            public void onDeviceConnectionFailed() {
+                Toast.makeText(getContext(), "블루투스 연결 실패", Toast.LENGTH_SHORT);
+            }
+        });
+
+
+        Button sendbutton = view.findViewById(R.id.connectbtn);
+        sendbutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (bt.getServiceState() == BluetoothState.STATE_CONNECTED) {
+                    bt.disconnect();    //블루투스 연결되어 있으면 끊고
+                } else {
+                    Intent intent = new Intent(getContext(), DeviceList.class);
+                    startActivityForResult(intent, BluetoothState.REQUEST_CONNECT_DEVICE);  //끊겨있으면 연결해준다.
+                }
+            }
+        });
+
         return view;
     }
+
+    public void onDestroy(){
+        super.onDestroy();
+        bt.stopService();   //블루투스 끊음.
+    }
+
+    public void onStart(){
+        super.onStart();
+        if (!bt.isBluetoothEnabled()) { //
+            Intent intent = new Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE);
+            startActivityForResult(intent, BluetoothState.REQUEST_ENABLE_BT);
+        } else {
+            if (!bt.isServiceAvailable()) {
+                bt.setupService();
+                bt.startService(BluetoothState.DEVICE_OTHER); //DEVICE_ANDROID는 안드로이드 기기 끼리
+                setup();
+            }
+        }
+
+    }
+
+
+    public void setup(){
+        Button btnSend = getActivity().findViewById(R.id.sendbtn); //데이터 전송
+        btnSend.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Toast.makeText(getContext(), "AAA", Toast.LENGTH_SHORT);
+                bt.send("Text", true);
+            }
+        });
+
+    }
+
+    public void onActivityResult(int requestCode, int resultCode, Intent data) {
+        if (requestCode == BluetoothState.REQUEST_CONNECT_DEVICE) {
+            if (resultCode == Activity.RESULT_OK)
+                bt.connect(data);
+        } else if (requestCode == BluetoothState.REQUEST_ENABLE_BT) {
+            if (resultCode == Activity.RESULT_OK) {
+                bt.setupService();
+                bt.startService(BluetoothState.DEVICE_OTHER);
+                setup();
+            } else {
+                Toast.makeText(getContext()
+                        , "Bluetooth was not enabled."
+                        , Toast.LENGTH_SHORT).show();
+                //finish();
+            }
+        }
+    }
+
+
+
+
 
     // TODO: Rename method, update argument and hook method into UI event
     public void onButtonPressed(Uri uri) {

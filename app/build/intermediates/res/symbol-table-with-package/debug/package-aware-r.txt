@@ -773,6 +773,8 @@ dimen abc_text_size_subhead_material
 dimen abc_text_size_subtitle_material_toolbar
 dimen abc_text_size_title_material
 dimen abc_text_size_title_material_toolbar
+dimen bluetooth_spp_padding
+dimen bluetooth_spp_text_size
 dimen cardview_compat_inset_shadow
 dimen cardview_default_elevation
 dimen cardview_default_radius
@@ -1069,6 +1071,7 @@ id blocking
 id bottom
 id button
 id buttonPanel
+id button_scan
 id cancel_action
 id center
 id center_horizontal
@@ -1079,6 +1082,7 @@ id chronometer
 id clip_horizontal
 id clip_vertical
 id collapseActionView
+id connectbtn
 id container
 id content
 id contentPanel
@@ -1131,6 +1135,7 @@ id left
 id line1
 id line3
 id listMode
+id list_devices
 id list_item
 id masked
 id media_actions
@@ -1184,6 +1189,7 @@ id search_src_text
 id search_voice_btn
 id select_dialog_listview
 id selected
+id sendbtn
 id shortcut
 id showCustom
 id showHome
@@ -1306,6 +1312,8 @@ layout design_navigation_item_subheader
 layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_password_icon
+layout device_list
+layout device_name
 layout fragment_tab1
 layout fragment_tab2
 layout fragment_tab3

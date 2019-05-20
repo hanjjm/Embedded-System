@@ -744,6 +744,10 @@
         "source": "/Users/kimhanju/.gradle/caches/transforms-2/files-2.1/6d2125ed9e7c7554f58776d5ffe741a0/res/drawable-mdpi-v4/abc_scrubber_control_to_pressed_mtrl_000.png"
     },
     {
+        "merged": "/Users/kimhanju/Desktop/IronHeater/app/build/intermediates/res/merged/debug/layout_device_name.xml.flat",
+        "source": "/Users/kimhanju/.gradle/caches/transforms-2/files-2.1/d0f9a7674935bebbb161d8383252f06e/res/layout/device_name.xml"
+    },
+    {
         "merged": "/Users/kimhanju/Desktop/IronHeater/app/build/intermediates/res/merged/debug/layout_abc_action_mode_bar.xml.flat",
         "source": "/Users/kimhanju/.gradle/caches/transforms-2/files-2.1/6d2125ed9e7c7554f58776d5ffe741a0/res/layout/abc_action_mode_bar.xml"
     },
@@ -1400,12 +1404,12 @@
         "source": "/Users/kimhanju/.gradle/caches/transforms-2/files-2.1/6d2125ed9e7c7554f58776d5ffe741a0/res/drawable-ldrtl-xhdpi-v17/abc_ic_menu_copy_mtrl_am_alpha.png"
     },
     {
-        "merged": "/Users/kimhanju/Desktop/IronHeater/app/build/intermediates/res/merged/debug/anim_abc_slide_out_top.xml.flat",
-        "source": "/Users/kimhanju/.gradle/caches/transforms-2/files-2.1/6d2125ed9e7c7554f58776d5ffe741a0/res/anim/abc_slide_out_top.xml"
-    },
-    {
         "merged": "/Users/kimhanju/Desktop/IronHeater/app/build/intermediates/res/merged/debug/layout_notification_template_big_media_narrow.xml.flat",
         "source": "/Users/kimhanju/.gradle/caches/transforms-2/files-2.1/5086d2baab2cd2d88f34f8066988c731/res/layout/notification_template_big_media_narrow.xml"
+    },
+    {
+        "merged": "/Users/kimhanju/Desktop/IronHeater/app/build/intermediates/res/merged/debug/anim_abc_slide_out_top.xml.flat",
+        "source": "/Users/kimhanju/.gradle/caches/transforms-2/files-2.1/6d2125ed9e7c7554f58776d5ffe741a0/res/anim/abc_slide_out_top.xml"
     },
     {
         "merged": "/Users/kimhanju/Desktop/IronHeater/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_list_longpressed_holo.9.png.flat",
@@ -1814,6 +1818,10 @@
     {
         "merged": "/Users/kimhanju/Desktop/IronHeater/app/build/intermediates/res/merged/debug/layout_abc_list_menu_item_radio.xml.flat",
         "source": "/Users/kimhanju/.gradle/caches/transforms-2/files-2.1/6d2125ed9e7c7554f58776d5ffe741a0/res/layout/abc_list_menu_item_radio.xml"
+    },
+    {
+        "merged": "/Users/kimhanju/Desktop/IronHeater/app/build/intermediates/res/merged/debug/layout_device_list.xml.flat",
+        "source": "/Users/kimhanju/.gradle/caches/transforms-2/files-2.1/d0f9a7674935bebbb161d8383252f06e/res/layout/device_list.xml"
     },
     {
         "merged": "/Users/kimhanju/Desktop/IronHeater/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_spinner_mtrl_am_alpha.9.png.flat",
