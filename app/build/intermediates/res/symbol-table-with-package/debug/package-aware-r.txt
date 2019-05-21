@@ -1083,6 +1083,7 @@ id clip_horizontal
 id clip_vertical
 id collapseActionView
 id connectbtn
+id connectbtn3
 id container
 id content
 id contentPanel
@@ -1219,6 +1220,7 @@ id tablayout
 id tag_transition_group
 id tag_unhandled_key_event_manager
 id tag_unhandled_key_listeners
+id temp
 id temper
 id temper2
 id temper3

@@ -8,5 +8,25 @@
     <!-- TODO: Update blank fragment layout -->
 
 
+    <TextView
+        android:id="@+id/temp"
+        android:layout_width="150dp"
+        android:layout_height="115dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="135dp"
+        android:layout_marginBottom="302dp"
+        android:text="TextView"
+        android:textSize="50dp" />
 
+    <Button
+        android:id="@+id/connectbtn3"
+        android:layout_width="117dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="130dp"
+        android:layout_marginBottom="9dp"
+        android:background="#34A1B1"
+        android:text="블루투스 연결" />
 </RelativeLayout>

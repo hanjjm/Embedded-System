@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -39,7 +40,11 @@ public class Tab1 extends Fragment {
     SeekBar mSeekBar3;
     TextView mTxtValue3;
     String value3;
-    private BluetoothSPP bt;
+    public static BluetoothSPP bt;
+
+    public static String rec_data;
+
+  //  public static TextView tempmsg;
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -85,6 +90,15 @@ public class Tab1 extends Fragment {
         }
 
 
+        bt.setOnDataReceivedListener(new BluetoothSPP.OnDataReceivedListener() {
+            @Override
+            public void onDataReceived(byte[] data, String message) {
+                Log.i("ga", message);
+                Toast.makeText(getContext(), message, Toast.LENGTH_SHORT);
+            }
+        });
+
+
     }
 
     @Override
@@ -110,6 +124,14 @@ public class Tab1 extends Fragment {
         mSeekBar3.setProgress(30);
         value3 = String.valueOf(mSeekBar3.getProgress());
         mTxtValue3.setText(value3);
+
+        bt.setOnDataReceivedListener(new BluetoothSPP.OnDataReceivedListener() {
+            @Override
+            public void onDataReceived(byte[] data, String message) {
+                Log.i("ga", message);
+                Toast.makeText(getContext(), message, Toast.LENGTH_SHORT);
+            }
+        });
 
         mSeekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
@@ -194,6 +216,18 @@ public class Tab1 extends Fragment {
                 Toast.makeText(getContext(), "블루투스 연결 실패", Toast.LENGTH_SHORT);
             }
         });
+bt.
+//rec_data = "SDFAF";
+        bt.setOnDataReceivedListener(new BluetoothSPP.OnDataReceivedListener() {
+            @Override
+            public void onDataReceived(byte[] data, String message) {
+                Toast.makeText(getContext(), message, Toast.LENGTH_SHORT);  //수신한 데이터
+                Log.i("a", "SDFSFF");
+                rec_data = message;
+                rec_data = "!";
+            }
+        });
+
 
 
         Button connectbutton = view.findViewById(R.id.connectbtn);
@@ -243,19 +277,31 @@ public class Tab1 extends Fragment {
             }
         });
         Button btnSend2 = getActivity().findViewById(R.id.sendbtn2); //데이터 전송
-        btnSend.setOnClickListener(new View.OnClickListener() {
+        btnSend2.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Toast.makeText(getContext(), "AAA", Toast.LENGTH_SHORT);
                 bt.send("2", true);
                 bt.send(value2, true);
+
             }
         });
         Button btnSend3 = getActivity().findViewById(R.id.sendbtn3); //데이터 전송
-        btnSend.setOnClickListener(new View.OnClickListener() {
+        btnSend3.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Toast.makeText(getContext(), "AAA", Toast.LENGTH_SHORT);
                 bt.send("3", true);
                 bt.send(value3, true);
+            }
+        });
+
+
+        bt.setOnDataReceivedListener(new BluetoothSPP.OnDataReceivedListener() {
+            @Override
+            public void onDataReceived(byte[] data, String message) {
+                Toast.makeText(getContext(), "SADF", Toast.LENGTH_SHORT);
+                Toast.makeText(getContext(), message, Toast.LENGTH_SHORT);
+                Log.i("abab", message);
+                Log.i("abab", "ASD");
             }
         });
 
