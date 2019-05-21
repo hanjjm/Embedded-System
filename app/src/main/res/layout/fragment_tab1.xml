@@ -21,8 +21,8 @@
         android:layout_height="60dp"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginRight="47dp"
-        android:layout_marginBottom="28dp"
+        android:layout_marginRight="248dp"
+        android:layout_marginBottom="647dp"
         android:background="@android:color/transparent"
         android:textSize="30dp"
         android:visibility="visible" />
@@ -63,8 +63,26 @@
         android:layout_height="74dp"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginRight="35dp"
-        android:layout_marginBottom="383dp" />
+        android:layout_marginRight="28dp"
+        android:layout_marginBottom="388dp" />
+
+    <SeekBar
+        android:id="@+id/temperature2"
+        android:layout_width="185dp"
+        android:layout_height="74dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="252dp" />
+
+    <SeekBar
+        android:id="@+id/temperature3"
+        android:layout_width="185dp"
+        android:layout_height="74dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="29dp"
+        android:layout_marginBottom="105dp" />
 
     <TextView
         android:id="@+id/temper"
@@ -76,15 +94,36 @@
         android:layout_marginBottom="346dp"
         android:text="TextView" />
 
+    <TextView
+        android:id="@+id/temper2"
+        android:layout_width="84dp"
+        android:layout_height="58dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="79dp"
+        android:layout_marginBottom="221dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/temper3"
+        android:layout_width="84dp"
+        android:layout_height="58dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="70dp"
+        android:layout_marginBottom="83dp"
+        android:text="TextView" />
+
     <Button
         android:id="@+id/connectbtn"
-        android:layout_width="wrap_content"
+        android:layout_width="117dp"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginRight="160dp"
-        android:layout_marginBottom="22dp"
-        android:text="Button" />
+        android:layout_marginRight="94dp"
+        android:layout_marginBottom="8dp"
+        android:background="#34A1B1"
+        android:text="블루투스 연결" />
 
     <Button
         android:id="@+id/sendbtn"
@@ -95,7 +134,32 @@
         android:layout_alignParentBottom="true"
         android:layout_marginRight="65dp"
         android:layout_marginBottom="329dp"
-        android:text="Button" />
+        android:background="#34A1B1"
+        android:text="보내기" />
+
+    <Button
+        android:id="@+id/sendbtn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="74dp"
+        android:layout_marginBottom="189dp"
+        android:background="#34A1B1"
+        android:text="보내기" />
+
+    <Button
+        android:id="@+id/sendbtn3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="67dp"
+        android:layout_marginBottom="63dp"
+        android:background="#34A1B1"
+        android:text="보내기" />
 
 
 </RelativeLayout>

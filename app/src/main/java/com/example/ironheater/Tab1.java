@@ -33,6 +33,12 @@ public class Tab1 extends Fragment {
     SeekBar mSeekBar;
     TextView mTxtValue;
     String value;
+    SeekBar mSeekBar2;
+    TextView mTxtValue2;
+    String value2;
+    SeekBar mSeekBar3;
+    TextView mTxtValue3;
+    String value3;
     private BluetoothSPP bt;
 
     // TODO: Rename parameter arguments, choose names that match
@@ -88,12 +94,22 @@ public class Tab1 extends Fragment {
         View view = inflater.inflate(R.layout.fragment_tab1, container, false);
         mSeekBar = (SeekBar) view.findViewById(R.id.temperature);
         mTxtValue = (TextView) view.findViewById(R.id.temper);
+        mSeekBar2 = (SeekBar) view.findViewById(R.id.temperature2);
+        mTxtValue2 = (TextView) view.findViewById(R.id.temper2);
+        mSeekBar3 = (SeekBar) view.findViewById(R.id.temperature3);
+        mTxtValue3 = (TextView) view.findViewById(R.id.temper3);
 
         mSeekBar.setProgress(30);
-
         value = String.valueOf(mSeekBar.getProgress());
-
         mTxtValue.setText(value);
+
+        mSeekBar2.setProgress(30);
+        value2 = String.valueOf(mSeekBar2.getProgress());
+        mTxtValue2.setText(value2);
+
+        mSeekBar3.setProgress(30);
+        value3 = String.valueOf(mSeekBar3.getProgress());
+        mTxtValue3.setText(value3);
 
         mSeekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
@@ -114,6 +130,45 @@ public class Tab1 extends Fragment {
             }
         });
 
+
+        mSeekBar2.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener(){
+
+            @Override
+            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+                value2 = String.valueOf(progress);
+                mTxtValue2.setText(value2);
+            }
+
+            @Override
+            public void onStartTrackingTouch(SeekBar seekBar) {
+                Toast.makeText(getContext(), "온도조절 시작합니다.", Toast.LENGTH_SHORT).show();
+            }
+
+            @Override
+            public void onStopTrackingTouch(SeekBar seekBar) {
+                Toast.makeText(getContext(), "온도조절 끝났습니다.", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+
+        mSeekBar3.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener(){
+
+            @Override
+            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+                value3 = String.valueOf(progress);
+                mTxtValue3.setText(value3);
+            }
+
+            @Override
+            public void onStartTrackingTouch(SeekBar seekBar) {
+                Toast.makeText(getContext(), "온도조절 시작합니다.", Toast.LENGTH_SHORT).show();
+            }
+
+            @Override
+            public void onStopTrackingTouch(SeekBar seekBar) {
+                Toast.makeText(getContext(), "온도조절 끝났습니다.", Toast.LENGTH_SHORT).show();
+            }
+        });
 
         bt.setOnDataReceivedListener(new BluetoothSPP.OnDataReceivedListener() {
             @Override
@@ -141,8 +196,8 @@ public class Tab1 extends Fragment {
         });
 
 
-        Button sendbutton = view.findViewById(R.id.connectbtn);
-        sendbutton.setOnClickListener(new View.OnClickListener() {
+        Button connectbutton = view.findViewById(R.id.connectbtn);
+        connectbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if (bt.getServiceState() == BluetoothState.STATE_CONNECTED) {
@@ -183,7 +238,24 @@ public class Tab1 extends Fragment {
         btnSend.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Toast.makeText(getContext(), "AAA", Toast.LENGTH_SHORT);
-                bt.send("Text", true);
+                bt.send("1", true);
+                bt.send(value, true);
+            }
+        });
+        Button btnSend2 = getActivity().findViewById(R.id.sendbtn2); //데이터 전송
+        btnSend.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Toast.makeText(getContext(), "AAA", Toast.LENGTH_SHORT);
+                bt.send("2", true);
+                bt.send(value2, true);
+            }
+        });
+        Button btnSend3 = getActivity().findViewById(R.id.sendbtn3); //데이터 전송
+        btnSend.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Toast.makeText(getContext(), "AAA", Toast.LENGTH_SHORT);
+                bt.send("3", true);
+                bt.send(value3, true);
             }
         });
 
