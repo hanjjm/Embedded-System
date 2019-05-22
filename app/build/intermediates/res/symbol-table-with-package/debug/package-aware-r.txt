@@ -1069,6 +1069,10 @@ id barrier
 id beginning
 id blocking
 id bottom
+id btnBluetoothOff
+id btnBluetoothOn
+id btnConnect
+id btnSendData
 id button
 id buttonPanel
 id button_scan
@@ -1247,6 +1251,9 @@ id transition_layout_save
 id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
+id tvBluetoothStatus
+id tvReceiveData
+id tvSendData
 id uniform
 id unlabeled
 id up

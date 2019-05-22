@@ -97,11 +97,12 @@ public class Tab2 extends Fragment {
 
         Log.i("tag", "abc");
 
-       // bt.setOnDataReceivedListener();
+        // bt.setOnDataReceivedListener();
 
         //rec_data = "2";
         TextView tempmsg = view.findViewById(R.id.temp);
-        tempmsg.setText(rec_data);
+
+            tempmsg.setText(rec_data);
 
 
 /*        bt.setOnDataReceivedListener(new BluetoothSPP.OnDataReceivedListener() {

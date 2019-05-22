@@ -2,10 +2,13 @@ package com.example.ironheater;
 
 import android.app.Activity;
 import android.bluetooth.BluetoothAdapter;
+import android.bluetooth.BluetoothDevice;
+import android.bluetooth.BluetoothSocket;
 import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.v4.app.Fragment;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -16,9 +19,15 @@ import android.widget.SeekBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.io.UnsupportedEncodingException;
+import java.util.List;
+import java.util.Set;
+
 import app.akexorcist.bluetotohspp.library.BluetoothSPP;
 import app.akexorcist.bluetotohspp.library.BluetoothState;
 import app.akexorcist.bluetotohspp.library.DeviceList;
+
+import static java.lang.Thread.sleep;
 
 
 /**
@@ -30,6 +39,20 @@ import app.akexorcist.bluetotohspp.library.DeviceList;
  * create an instance of this fragment.
  */
 public class Tab1 extends Fragment {
+
+    BluetoothAdapter mBluetoothAdapter;
+    Set<BluetoothDevice> mPairedDevices;
+    List<String> mListPairedDevices;
+
+    Handler mBluetoothHandler;
+    //ConnectedBluetoothThread mThreadConnectedBluetooth;
+    BluetoothDevice mBluetoothDevice;
+    BluetoothSocket mBluetoothSocket;
+
+    final static int BT_REQUEST_ENABLE = 1;
+    final static int BT_MESSAGE_READ = 2;
+    final static int BT_CONNECTING_STATUS = 3;
+
 
     SeekBar mSeekBar;
     TextView mTxtValue;
@@ -84,6 +107,12 @@ public class Tab1 extends Fragment {
         super.onCreate(savedInstanceState);
         bt = new BluetoothSPP(getContext()); //Initializing
 
+        mBluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
+
+
+
+
+
         if (getArguments() != null) {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
@@ -97,6 +126,9 @@ public class Tab1 extends Fragment {
                 Toast.makeText(getContext(), message, Toast.LENGTH_SHORT);
             }
         });
+
+
+
 
 
     }
@@ -216,6 +248,7 @@ public class Tab1 extends Fragment {
                 Toast.makeText(getContext(), "블루투스 연결 실패", Toast.LENGTH_SHORT);
             }
         });
+/*
 bt.
 //rec_data = "SDFAF";
         bt.setOnDataReceivedListener(new BluetoothSPP.OnDataReceivedListener() {
@@ -228,6 +261,7 @@ bt.
             }
         });
 
+*/
 
 
         Button connectbutton = view.findViewById(R.id.connectbtn);
@@ -243,8 +277,42 @@ bt.
             }
         });
 
+
+
+
+
+
         return view;
     }
+
+
+    public void handleMessage(android.os.Message msg){
+
+        Toast.makeText(getContext(), "ASD", Toast.LENGTH_SHORT);
+        if(msg.what == BT_MESSAGE_READ){
+            String readMessage = null;
+            readMessage = "";
+            Toast.makeText(getContext(), "ASD", Toast.LENGTH_SHORT);
+            try {
+                readMessage = "";
+                readMessage = "null";
+                readMessage = new String((byte[]) msg.obj , "UTF-8");
+                Log.i("a", new String((byte[]) msg.obj));
+                Toast.makeText(getContext(), new String((byte[]) msg.obj), Toast.LENGTH_SHORT);
+            } catch (UnsupportedEncodingException e) {
+                e.printStackTrace();
+            }
+
+
+            rec_data = readMessage;
+
+            //mTvReceiveData.setText(readMessage.substring(0,5));
+
+            //Toast.makeText(getApplicationContext(), "ASD", Toast.LENGTH_SHORT);
+        }
+    }
+
+
 
     public void onDestroy(){
         super.onDestroy();
@@ -273,7 +341,14 @@ bt.
             public void onClick(View v) {
                 Toast.makeText(getContext(), "AAA", Toast.LENGTH_SHORT);
                 bt.send("1", true);
-                bt.send(value, true);
+                try {
+                    Thread.sleep(1000);      // 1초씩 딜레이. for문에 넣어놨으니 결과는 1초마다 실행됨.
+
+                } catch (InterruptedException e) {    //sleep에서 생기는 방해오류(InterruptedException)를 처리.
+                    e.printStackTrace();
+                }
+
+                  bt.send(value+"A", true);
             }
         });
         Button btnSend2 = getActivity().findViewById(R.id.sendbtn2); //데이터 전송
