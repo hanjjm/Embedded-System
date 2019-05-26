@@ -92,6 +92,9 @@ public class MainActivity extends AppCompatActivity {
         btnSend2 = findViewById(R.id.sendbtn2);
         btnSend3 = findViewById(R.id.sendbtn3);
 
+        nowtemper1 = findViewById(R.id.now_temper1);
+        nowtemper2 = findViewById(R.id.now_temper2);
+        nowtemper3 = findViewById(R.id.now_temper3);
 
         mBluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
 
@@ -114,7 +117,7 @@ public class MainActivity extends AppCompatActivity {
                 listPairedDevices();
             }
         });
-        mBtnSendData.setOnClickListener(new Button.OnClickListener() {
+/*        mBtnSendData.setOnClickListener(new Button.OnClickListener() {
             @Override
             public void onClick(View view) {
                 if(mThreadConnectedBluetooth != null) {
@@ -122,7 +125,7 @@ public class MainActivity extends AppCompatActivity {
                     mTvSendData.setText("");
                 }
             }
-        });
+        });*/
 
      //   Button btnSend = findViewById(R.id.sendbtn); //데이터 전송
         btnSend.setOnClickListener(new Button.OnClickListener() {
@@ -142,8 +145,12 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 //     Toast.makeText(getContext(), "AAA", Toast.LENGTH_SHORT);
-                bt.send("2"+"P", true);
-                bt.send(value2+"A", true);
+/*                bt.send("2"+"P", true);
+                bt.send(value2+"A", true);*/
+                if(mThreadConnectedBluetooth != null) {
+                    mThreadConnectedBluetooth.write("2P");
+                    mThreadConnectedBluetooth.write(value2 + "A");
+                }
 
             }
         });
@@ -152,13 +159,17 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Toast.makeText(getContext(), "AAA", Toast.LENGTH_SHORT);
-                bt.send("3"+"P", true);
-                bt.send(value3+"A", true);
+/*                bt.send("3"+"P", true);
+                bt.send(value3+"A", true);*/
+                if(mThreadConnectedBluetooth != null) {
+                    mThreadConnectedBluetooth.write("3P");
+                    mThreadConnectedBluetooth.write(value3 + "A");
+                }
             }
         });
 
 
-        bt.setOnDataReceivedListener(new BluetoothSPP.OnDataReceivedListener() {
+/*        bt.setOnDataReceivedListener(new BluetoothSPP.OnDataReceivedListener() {
             @Override
             public void onDataReceived(byte[] data, String message) {
                 //     Toast.makeText(getContext(), "SADF", Toast.LENGTH_SHORT);
@@ -166,7 +177,7 @@ public class MainActivity extends AppCompatActivity {
                 Log.i("abab", message);
                 Log.i("abab", "ASD");
             }
-        });
+        });*/
 
 
         mBluetoothHandler = new Handler(){
@@ -185,8 +196,9 @@ public class MainActivity extends AppCompatActivity {
                         e.printStackTrace();
                     }
                //     readMessage.
-                    mTvReceiveData.setText(readMessage.substring(0,1)+readMessage.substring(3,5));
-
+                    if(readMessage.charAt(0) == 'a') nowtemper1.setText("현재온도 : " + readMessage.substring(3, 5) + "도");
+                    else if(readMessage.charAt(0) == 'b') nowtemper2.setText("현재온도 : " + readMessage.substring(3, 5) + "도");
+                    else if(readMessage.charAt(0) == 'c') nowtemper3.setText("현재온도 : " + readMessage.substring(3, 5) + "도");
                    // Toast.makeText(getApplicationContext(), "ASD", Toast.LENGTH_SHORT);
                 }
             }
@@ -204,15 +216,20 @@ public class MainActivity extends AppCompatActivity {
         nowtemper3 = findViewById(R.id.now_temper3);
 
 
-        mSeekBar.setProgress(30);
+        mSeekBar.setProgress(35);
+       // mSeekBar.setMin(30);
+        mSeekBar.setMax(70);
+        //mSeekBar.setMin(10);
         value = String.valueOf(mSeekBar.getProgress());
         mTxtValue.setText(value);
 
         mSeekBar2.setProgress(30);
+        mSeekBar2.setMax(70);
         value2 = String.valueOf(mSeekBar2.getProgress());
         mTxtValue2.setText(value2);
 
         mSeekBar3.setProgress(30);
+        mSeekBar3.setMax(70);
         value3 = String.valueOf(mSeekBar3.getProgress());
         mTxtValue3.setText(value3);
 
@@ -278,12 +295,6 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
-
-
-
-
-
-
 
     void bluetoothOn() {
         if(mBluetoothAdapter == null) {

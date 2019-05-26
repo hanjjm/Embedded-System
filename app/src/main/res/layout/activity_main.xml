@@ -16,8 +16,8 @@
 
         android:layout_marginLeft="30dp"
         android:layout_marginTop="30dp"
-        android:layout_marginRight="4dp"
-        android:layout_marginBottom="138dp"
+        android:layout_marginRight="139dp"
+        android:layout_marginBottom="687dp"
         android:text="블루투스 ON"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -31,8 +31,8 @@
         android:layout_alignParentBottom="true"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginRight="300dp"
-        android:layout_marginBottom="186dp"
+        android:layout_marginRight="159dp"
+        android:layout_marginBottom="673dp"
         android:text="블루투스 OFF"
         app:layout_constraintStart_toEndOf="@+id/btnBluetoothOn"
         app:layout_constraintTop_toTopOf="@+id/btnBluetoothOn" />
@@ -45,23 +45,24 @@
 
         android:layout_alignParentBottom="true"
         android:layout_marginTop="10dp"
-        android:layout_marginRight="250dp"
-        android:layout_marginBottom="559dp"
+        android:layout_marginRight="241dp"
+        android:layout_marginBottom="607dp"
         android:text="status"
         app:layout_constraintStart_toStartOf="@+id/btnBluetoothOn"
         app:layout_constraintTop_toBottomOf="@+id/btnBluetoothOn" />
 
     <Button
         android:id="@+id/btnConnect"
-        android:layout_width="wrap_content"
-        android:layout_height="50dp"
+        android:layout_width="145dp"
+        android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
 
         android:layout_marginTop="10dp"
-        android:layout_marginRight="238dp"
-        android:layout_marginBottom="347dp"
-        android:text="연결하기"
+        android:layout_marginRight="117dp"
+        android:layout_marginBottom="3dp"
+        android:background="#34A1B1"
+        android:text="블루투스 연결"
         app:layout_constraintStart_toStartOf="@+id/tvBluetoothStatus"
         app:layout_constraintTop_toBottomOf="@+id/tvBluetoothStatus" />
 
@@ -73,8 +74,8 @@
         android:layout_alignParentBottom="true"
 
         android:layout_marginTop="10dp"
-        android:layout_marginRight="85dp"
-        android:layout_marginBottom="506dp"
+        android:layout_marginRight="107dp"
+        android:layout_marginBottom="577dp"
         android:text="Receive"
         app:layout_constraintStart_toStartOf="@+id/btnSendData"
         app:layout_constraintTop_toBottomOf="@+id/btnSendData" />
@@ -87,8 +88,8 @@
         android:layout_alignParentBottom="true"
 
         android:layout_marginTop="10dp"
-        android:layout_marginRight="299dp"
-        android:layout_marginBottom="11dp"
+        android:layout_marginRight="124dp"
+        android:layout_marginBottom="657dp"
         android:text="전송"
         app:layout_constraintStart_toStartOf="@+id/btnConnect"
         app:layout_constraintTop_toBottomOf="@+id/btnConnect" />
@@ -102,8 +103,8 @@
         android:layout_marginStart="8dp"
 
         android:layout_marginLeft="8dp"
-        android:layout_marginRight="211dp"
-        android:layout_marginBottom="5dp"
+        android:layout_marginRight="162dp"
+        android:layout_marginBottom="674dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Send Data"
@@ -226,8 +227,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginRight="130dp"
-        android:layout_marginBottom="9dp"
+        android:layout_marginRight="262dp"
+        android:layout_marginBottom="663dp"
         android:background="#34A1B1"
         android:text="블루투스 연결" />
 
