@@ -221,24 +221,24 @@ public class MainActivity extends AppCompatActivity {
         mSeekBar.setMax(70);
         //mSeekBar.setMin(10);
         value = String.valueOf(mSeekBar.getProgress());
-        mTxtValue.setText(value);
+        mTxtValue.setText("목표온도 : " + value + "도");
 
         mSeekBar2.setProgress(30);
         mSeekBar2.setMax(70);
         value2 = String.valueOf(mSeekBar2.getProgress());
-        mTxtValue2.setText(value2);
+        mTxtValue2.setText("목표온도 : " + value2 + "도");
 
         mSeekBar3.setProgress(30);
         mSeekBar3.setMax(70);
         value3 = String.valueOf(mSeekBar3.getProgress());
-        mTxtValue3.setText(value3);
+        mTxtValue3.setText("목표온도 : " + value3 + "도");
 
 
         mSeekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
                 value = String.valueOf(progress);
-                mTxtValue.setText(value);
+                mTxtValue.setText("목표온도 : " + value + "도");
 
             }
 
@@ -259,7 +259,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
                 value2 = String.valueOf(progress);
-                mTxtValue2.setText(value2);
+                mTxtValue2.setText("목표온도 : " + value2 + "도");
             }
 
             @Override
@@ -279,7 +279,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
                 value3 = String.valueOf(progress);
-                mTxtValue3.setText(value3);
+                mTxtValue3.setText("목표온도 : " + value3 + "도");
             }
 
             @Override
