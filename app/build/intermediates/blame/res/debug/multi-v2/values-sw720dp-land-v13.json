@@ -1,0 +1,26 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/kimhanju/Desktop/Project/Warmer/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sw720dp-land-v13/values-sw720dp-land-v13.xml",
+            "map": [
+                {
+                    "source": "/Users/kimhanju/.gradle/caches/transforms-2/files-2.1/d0f9a7674935bebbb161d8383252f06e/res/values-sw720dp-land-v13/values.xml",
+                    "from": {
+                        "startLines": "4,5",
+                        "startColumns": "4,4",
+                        "startOffsets": "239,292",
+                        "endColumns": "52,54",
+                        "endOffsets": "287,342"
+                    },
+                    "to": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,108",
+                        "endColumns": "52,54",
+                        "endOffsets": "103,158"
+                    }
+                }
+            ]
+        }
+    ]
+}

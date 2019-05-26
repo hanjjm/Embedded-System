@@ -1,27 +1,8 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/kimhanju/Desktop/IronHeater/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v21/values-v21.xml",
+            "outputFile": "/Users/kimhanju/Desktop/Project/Warmer/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v21/values-v21.xml",
             "map": [
-                {
-                    "source": "/Users/kimhanju/.gradle/caches/transforms-2/files-2.1/5086d2baab2cd2d88f34f8066988c731/res/values-v21/values-v21.xml",
-                    "from": {
-                        "startLines": "2,5,8,11",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "55,223,386,554",
-                        "endLines": "4,7,10,13",
-                        "endColumns": "12,12,12,12",
-                        "endOffsets": "218,381,549,716"
-                    },
-                    "to": {
-                        "startLines": "265,268,272,276",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "19504,19672,19961,20257",
-                        "endLines": "267,270,274,278",
-                        "endColumns": "12,12,12,12",
-                        "endOffsets": "19667,19830,20124,20419"
-                    }
-                },
                 {
                     "source": "/Users/kimhanju/.gradle/caches/transforms-2/files-2.1/6d2125ed9e7c7554f58776d5ffe741a0/res/values-v21/values-v21.xml",
                     "from": {
@@ -52,31 +33,12 @@
                         "endOffsets": "154,218,285,349,465,591,717,845,1017,1355"
                     },
                     "to": {
-                        "startLines": "2,3,4,5,263,264,271,275,307,310",
+                        "startLines": "2,3,4,5,263,264,265,266,267,270",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,159,223,290,19262,19378,19835,20129,21861,22033",
-                        "endLines": "2,3,4,5,263,264,271,275,309,314",
+                        "startOffsets": "55,159,223,290,19262,19378,19504,19630,19758,19930",
+                        "endLines": "2,3,4,5,263,264,265,266,269,274",
                         "endColumns": "103,63,66,63,115,125,125,127,12,12",
-                        "endOffsets": "154,218,285,349,19373,19499,19956,20252,22028,22366"
-                    }
-                },
-                {
-                    "source": "/Users/kimhanju/.gradle/caches/transforms-2/files-2.1/131bc39186a602cdaac2666cbe04b56b/res/values-v21/values-v21.xml",
-                    "from": {
-                        "startLines": "2,9,16,23",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "55,415,772,1126",
-                        "endLines": "8,15,22,29",
-                        "endColumns": "10,10,10,10",
-                        "endOffsets": "410,767,1121,1487"
-                    },
-                    "to": {
-                        "startLines": "279,286,293,300",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "20424,20784,21141,21495",
-                        "endLines": "285,292,299,306",
-                        "endColumns": "10,10,10,10",
-                        "endOffsets": "20779,21136,21490,21856"
+                        "endOffsets": "154,218,285,349,19373,19499,19625,19753,19925,20263"
                     }
                 }
             ]
