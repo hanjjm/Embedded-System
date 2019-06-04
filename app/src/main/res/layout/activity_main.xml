@@ -2,6 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/whitesmoke"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
@@ -53,16 +54,15 @@
 
     <Button
         android:id="@+id/btnConnect"
-        android:layout_width="145dp"
-        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="147dp"
+        android:layout_height="81dp"
         android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
 
-        android:layout_marginTop="10dp"
-        android:layout_marginRight="117dp"
-        android:layout_marginBottom="3dp"
-        android:background="#34A1B1"
-        android:text="블루투스 연결"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="96dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/connect1"
         app:layout_constraintStart_toStartOf="@+id/tvBluetoothStatus"
         app:layout_constraintTop_toBottomOf="@+id/tvBluetoothStatus" />
 
@@ -136,33 +136,33 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="147dp"
-        android:layout_height="144dp"
+        android:layout_width="148dp"
+        android:layout_height="149dp"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginRight="238dp"
-        android:layout_marginBottom="42dp"
-        android:src="@drawable/arm" />
+        android:layout_marginRight="210dp"
+        android:layout_marginBottom="390dp"
+        android:src="@drawable/right" />
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="147dp"
-        android:layout_height="144dp"
+        android:layout_width="148dp"
+        android:layout_height="138dp"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginRight="238dp"
-        android:layout_marginBottom="211dp"
-        android:src="@drawable/arm" />
+        android:layout_marginRight="210dp"
+        android:layout_marginBottom="230dp"
+        android:src="@drawable/left" />
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="147dp"
-        android:layout_height="144dp"
+        android:layout_width="146dp"
+        android:layout_height="139dp"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginRight="243dp"
-        android:layout_marginBottom="384dp"
-        android:src="@drawable/arm" />
+        android:layout_marginRight="213dp"
+        android:layout_marginBottom="69dp"
+        android:src="@drawable/waist" />
 
     <SeekBar
         android:id="@+id/temperature"
@@ -170,8 +170,8 @@
         android:layout_height="74dp"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginRight="35dp"
-        android:layout_marginBottom="462dp" />
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="467dp" />
 
     <SeekBar
         android:id="@+id/temperature2"
@@ -179,8 +179,8 @@
         android:layout_height="74dp"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginRight="35dp"
-        android:layout_marginBottom="288dp" />
+        android:layout_marginRight="13dp"
+        android:layout_marginBottom="300dp" />
 
     <SeekBar
         android:id="@+id/temperature3"
@@ -188,8 +188,8 @@
         android:layout_height="74dp"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginRight="32dp"
-        android:layout_marginBottom="116dp" />
+        android:layout_marginRight="13dp"
+        android:layout_marginBottom="142dp" />
 
     <TextView
         android:id="@+id/temper"
@@ -197,9 +197,10 @@
         android:layout_height="55dp"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginRight="57dp"
-        android:layout_marginBottom="431dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="430dp"
         android:text="TextView"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         android:textSize="13dp" />
 
     <TextView
@@ -208,9 +209,10 @@
         android:layout_height="55dp"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginRight="55dp"
-        android:layout_marginBottom="264dp"
-        android:text="TextView" />
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="262dp"
+        android:text="TextView"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
 
     <TextView
         android:id="@+id/temper3"
@@ -218,9 +220,10 @@
         android:layout_height="49dp"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginRight="38dp"
-        android:layout_marginBottom="98dp"
-        android:text="TextView" />
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="115dp"
+        android:text="TextView"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
 
     <Button
         android:id="@+id/connectbtn"
@@ -236,40 +239,38 @@
     <Button
         android:id="@+id/sendbtn"
         style="@style/Widget.AppCompat.Button"
-        android:layout_width="wrap_content"
+        android:layout_width="70dp"
 
-        android:layout_height="wrap_content"
+        android:layout_height="30dp"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginRight="28dp"
-        android:layout_marginBottom="421dp"
-        android:background="#34A1B1"
-        android:text="보내기"
+        android:layout_marginRight="23dp"
+        android:layout_marginBottom="445dp"
+        android:background="@drawable/submit"
+
         android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
     <Button
         android:id="@+id/sendbtn2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
 
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginRight="27dp"
-        android:layout_marginBottom="247dp"
-        android:background="#34A1B1"
-        android:text="보내기" />
+        android:layout_marginRight="22dp"
+        android:layout_marginBottom="277dp"
+        android:background="@drawable/submit" />
 
     <Button
         android:id="@+id/sendbtn3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
 
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginRight="27dp"
-        android:layout_marginBottom="73dp"
-        android:background="#34A1B1"
-        android:text="보내기" />
+        android:layout_marginRight="23dp"
+        android:layout_marginBottom="122dp"
+        android:background="@drawable/submit" />
 
     <TextView
         android:id="@+id/now_temper1"
@@ -277,9 +278,10 @@
         android:layout_height="56dp"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginRight="55dp"
-        android:layout_marginBottom="402dp"
-        android:text="TextView" />
+        android:layout_marginRight="26dp"
+        android:layout_marginBottom="406dp"
+        android:text="TextView"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
 
     <TextView
         android:id="@+id/now_temper2"
@@ -287,9 +289,10 @@
         android:layout_height="38dp"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginRight="48dp"
-        android:layout_marginBottom="256dp"
-        android:text="TextView" />
+        android:layout_marginRight="22dp"
+        android:layout_marginBottom="253dp"
+        android:text="TextView"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
 
     <TextView
         android:id="@+id/now_temper3"
@@ -297,8 +300,9 @@
         android:layout_height="41dp"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginRight="70dp"
-        android:layout_marginBottom="81dp"
-        android:text="TextView" />
+        android:layout_marginRight="51dp"
+        android:layout_marginBottom="97dp"
+        android:text="TextView"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
 
 </RelativeLayout>

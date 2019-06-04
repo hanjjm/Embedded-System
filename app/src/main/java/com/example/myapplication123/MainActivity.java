@@ -79,6 +79,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        Intent intent = new Intent(this, Loading.class);
+        startActivity(intent);
+
         bt = new BluetoothSPP(getApplicationContext()); //Initializing
         mTvBluetoothStatus = (TextView)findViewById(R.id.tvBluetoothStatus);
         mTvReceiveData = (TextView)findViewById(R.id.tvReceiveData);
