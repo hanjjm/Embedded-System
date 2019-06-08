@@ -206,9 +206,11 @@ public class MainActivity extends AppCompatActivity {
                         e.printStackTrace();
                     }
                //     readMessage.
-                    if(readMessage.charAt(0) == 'a') nowtemper1.setText("현재온도 : " + readMessage.substring(3, 5) + "도");
-                    else if(readMessage.charAt(0) == 'b') nowtemper2.setText("현재온도 : " + readMessage.substring(3, 5) + "도");
-                    else if(readMessage.charAt(0) == 'c') nowtemper3.setText("현재온도 : " + readMessage.substring(3, 5) + "도");
+                    if(readMessage.charAt(0) == 'a' && readMessage.charAt(1) == 'a' && readMessage.charAt(2) == 'a') nowtemper1.setText("현재온도 : " + readMessage.substring(3, 5) + "도");
+
+                    if(readMessage.charAt(0) == 'b' && readMessage.charAt(1) == 'b' && readMessage.charAt(2) == 'b') nowtemper2.setText("현재온도 : " + readMessage.substring(3, 5) + "도");
+
+                    if(readMessage.charAt(0) == 'd' && readMessage.charAt(1) == 'd' && readMessage.charAt(2) == 'd') nowtemper3.setText("현재온도 : " + readMessage.substring(3, 5) + "도");
                    // Toast.makeText(getApplicationContext(), "ASD", Toast.LENGTH_SHORT);
                 }
             }
@@ -228,20 +230,20 @@ public class MainActivity extends AppCompatActivity {
 
         mSeekBar.setProgress(30);
        // mSeekBar.setMin(30);
-        //mSeekBar.setMax(50);
-        //mSeekBar.setMin(10);
         mSeekBar.setMax(50);
+        //mSeekBar.setMin(10);
+        //mSeekBar.setMax(50);
         value = String.valueOf(mSeekBar.getProgress());
         mTxtValue.setText("목표온도 : " + value + "도");
-        mSeekBar2.setMax(50);
-        mSeekBar2.setProgress(30);
        // mSeekBar2.setMax(50);
+        mSeekBar2.setProgress(30);
+        mSeekBar2.setMax(50);
 
         value2 = String.valueOf(mSeekBar2.getProgress());
         mTxtValue2.setText("목표온도 : " + value2 + "도");
-        mSeekBar3.setMax(50);
+       // mSeekBar3.setMax(50);
         mSeekBar3.setProgress(30);
-     //   mSeekBar3.setMax(50);
+        mSeekBar3.setMax(50);
         value3 = String.valueOf(mSeekBar3.getProgress());
         mTxtValue3.setText("목표온도 : " + value3 + "도");
 
