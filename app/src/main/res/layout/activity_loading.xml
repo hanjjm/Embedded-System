@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/cornsilk"
+    android:background="@color/black"
     android:orientation="vertical"
     android:paddingLeft="18dp"
     android:paddingRight="18dp">
@@ -38,8 +38,24 @@
 
 
     <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="393dp"
+        android:layout_height="449dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="-114dp"
+        android:src="@drawable/logo4" />
+
+    <ImageView
         android:id="@+id/imageView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/connect" />
+        android:layout_width="393dp"
+        android:layout_height="391dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="204dp"
+        android:src="@drawable/large" />
+
+
 </RelativeLayout>

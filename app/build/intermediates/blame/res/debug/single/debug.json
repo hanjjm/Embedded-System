@@ -108,6 +108,10 @@
         "source": "/Users/kimhanju/.gradle/caches/transforms-2/files-2.1/6d2125ed9e7c7554f58776d5ffe741a0/res/drawable-xhdpi-v4/abc_btn_check_to_on_mtrl_000.png"
     },
     {
+        "merged": "/Users/kimhanju/Desktop/Project/Warmer/app/build/intermediates/res/merged/debug/drawable_ironman.png.flat",
+        "source": "/Users/kimhanju/Desktop/Project/Warmer/app/src/main/res/drawable/ironman.png"
+    },
+    {
         "merged": "/Users/kimhanju/Desktop/Project/Warmer/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_scrubber_track_mtrl_alpha.9.png.flat",
         "source": "/Users/kimhanju/.gradle/caches/transforms-2/files-2.1/6d2125ed9e7c7554f58776d5ffe741a0/res/drawable-hdpi-v4/abc_scrubber_track_mtrl_alpha.9.png"
     },
@@ -120,12 +124,12 @@
         "source": "/Users/kimhanju/.gradle/caches/transforms-2/files-2.1/6d2125ed9e7c7554f58776d5ffe741a0/res/drawable-xxhdpi-v4/abc_list_longpressed_holo.9.png"
     },
     {
-        "merged": "/Users/kimhanju/Desktop/Project/Warmer/app/build/intermediates/res/merged/debug/drawable-ldrtl-xhdpi-v17_abc_spinner_mtrl_am_alpha.9.png.flat",
-        "source": "/Users/kimhanju/.gradle/caches/transforms-2/files-2.1/6d2125ed9e7c7554f58776d5ffe741a0/res/drawable-ldrtl-xhdpi-v17/abc_spinner_mtrl_am_alpha.9.png"
-    },
-    {
         "merged": "/Users/kimhanju/Desktop/Project/Warmer/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_btn_radio_to_on_mtrl_015.png.flat",
         "source": "/Users/kimhanju/.gradle/caches/transforms-2/files-2.1/6d2125ed9e7c7554f58776d5ffe741a0/res/drawable-xxhdpi-v4/abc_btn_radio_to_on_mtrl_015.png"
+    },
+    {
+        "merged": "/Users/kimhanju/Desktop/Project/Warmer/app/build/intermediates/res/merged/debug/drawable-ldrtl-xhdpi-v17_abc_spinner_mtrl_am_alpha.9.png.flat",
+        "source": "/Users/kimhanju/.gradle/caches/transforms-2/files-2.1/6d2125ed9e7c7554f58776d5ffe741a0/res/drawable-ldrtl-xhdpi-v17/abc_spinner_mtrl_am_alpha.9.png"
     },
     {
         "merged": "/Users/kimhanju/Desktop/Project/Warmer/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_btn_check_to_on_mtrl_000.png.flat",
@@ -222,6 +226,10 @@
     {
         "merged": "/Users/kimhanju/Desktop/Project/Warmer/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_cab_background_top_mtrl_alpha.9.png.flat",
         "source": "/Users/kimhanju/.gradle/caches/transforms-2/files-2.1/6d2125ed9e7c7554f58776d5ffe741a0/res/drawable-xhdpi-v4/abc_cab_background_top_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/Users/kimhanju/Desktop/Project/Warmer/app/build/intermediates/res/merged/debug/drawable_arc.png.flat",
+        "source": "/Users/kimhanju/Desktop/Project/Warmer/app/src/main/res/drawable/arc.png"
     },
     {
         "merged": "/Users/kimhanju/Desktop/Project/Warmer/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_scrubber_track_mtrl_alpha.9.png.flat",
@@ -324,6 +332,10 @@
         "source": "/Users/kimhanju/.gradle/caches/transforms-2/files-2.1/6d2125ed9e7c7554f58776d5ffe741a0/res/drawable-ldrtl-hdpi-v17/abc_ic_menu_cut_mtrl_alpha.png"
     },
     {
+        "merged": "/Users/kimhanju/Desktop/Project/Warmer/app/build/intermediates/res/merged/debug/drawable_logo4.png.flat",
+        "source": "/Users/kimhanju/Desktop/Project/Warmer/app/src/main/res/drawable/logo4.png"
+    },
+    {
         "merged": "/Users/kimhanju/Desktop/Project/Warmer/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_ic_menu_selectall_mtrl_alpha.png.flat",
         "source": "/Users/kimhanju/.gradle/caches/transforms-2/files-2.1/6d2125ed9e7c7554f58776d5ffe741a0/res/drawable-hdpi-v4/abc_ic_menu_selectall_mtrl_alpha.png"
     },
@@ -336,12 +348,12 @@
         "source": "/Users/kimhanju/.gradle/caches/transforms-2/files-2.1/6d2125ed9e7c7554f58776d5ffe741a0/res/drawable-mdpi-v4/abc_list_divider_mtrl_alpha.9.png"
     },
     {
-        "merged": "/Users/kimhanju/Desktop/Project/Warmer/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_launcher_background.png.flat",
-        "source": "/Users/kimhanju/Desktop/Project/Warmer/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_launcher_background.png"
-    },
-    {
         "merged": "/Users/kimhanju/Desktop/Project/Warmer/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_textfield_activated_mtrl_alpha.9.png.flat",
         "source": "/Users/kimhanju/.gradle/caches/transforms-2/files-2.1/6d2125ed9e7c7554f58776d5ffe741a0/res/drawable-xxhdpi-v4/abc_textfield_activated_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/Users/kimhanju/Desktop/Project/Warmer/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_launcher_background.png.flat",
+        "source": "/Users/kimhanju/Desktop/Project/Warmer/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_launcher_background.png"
     },
     {
         "merged": "/Users/kimhanju/Desktop/Project/Warmer/app/build/intermediates/res/merged/debug/drawable_abc_list_divider_material.xml.flat",
@@ -428,6 +440,10 @@
         "source": "/Users/kimhanju/.gradle/caches/transforms-2/files-2.1/6d2125ed9e7c7554f58776d5ffe741a0/res/drawable-xhdpi-v4/abc_ic_star_black_36dp.png"
     },
     {
+        "merged": "/Users/kimhanju/Desktop/Project/Warmer/app/build/intermediates/res/merged/debug/drawable_logo2.png.flat",
+        "source": "/Users/kimhanju/Desktop/Project/Warmer/app/src/main/res/drawable/logo2.png"
+    },
+    {
         "merged": "/Users/kimhanju/Desktop/Project/Warmer/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_scrubber_track_mtrl_alpha.9.png.flat",
         "source": "/Users/kimhanju/.gradle/caches/transforms-2/files-2.1/6d2125ed9e7c7554f58776d5ffe741a0/res/drawable-xxhdpi-v4/abc_scrubber_track_mtrl_alpha.9.png"
     },
@@ -442,6 +458,10 @@
     {
         "merged": "/Users/kimhanju/Desktop/Project/Warmer/app/build/intermediates/res/merged/debug/layout_device_list.xml.flat",
         "source": "/Users/kimhanju/.gradle/caches/transforms-2/files-2.1/d0f9a7674935bebbb161d8383252f06e/res/layout/device_list.xml"
+    },
+    {
+        "merged": "/Users/kimhanju/Desktop/Project/Warmer/app/build/intermediates/res/merged/debug/drawable_logo.png.flat",
+        "source": "/Users/kimhanju/Desktop/Project/Warmer/app/src/main/res/drawable/logo.png"
     },
     {
         "merged": "/Users/kimhanju/Desktop/Project/Warmer/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_ic_star_black_48dp.png.flat",
@@ -562,6 +582,10 @@
     {
         "merged": "/Users/kimhanju/Desktop/Project/Warmer/app/build/intermediates/res/merged/debug/color_abc_hint_foreground_material_light.xml.flat",
         "source": "/Users/kimhanju/.gradle/caches/transforms-2/files-2.1/6d2125ed9e7c7554f58776d5ffe741a0/res/color/abc_hint_foreground_material_light.xml"
+    },
+    {
+        "merged": "/Users/kimhanju/Desktop/Project/Warmer/app/build/intermediates/res/merged/debug/drawable_logo3.png.flat",
+        "source": "/Users/kimhanju/Desktop/Project/Warmer/app/src/main/res/drawable/logo3.png"
     },
     {
         "merged": "/Users/kimhanju/Desktop/Project/Warmer/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_text_select_handle_right_mtrl_dark.png.flat",
@@ -926,6 +950,10 @@
     {
         "merged": "/Users/kimhanju/Desktop/Project/Warmer/app/build/intermediates/res/merged/debug/drawable_submit.png.flat",
         "source": "/Users/kimhanju/Desktop/Project/Warmer/app/src/main/res/drawable/submit.png"
+    },
+    {
+        "merged": "/Users/kimhanju/Desktop/Project/Warmer/app/build/intermediates/res/merged/debug/drawable_large.png.flat",
+        "source": "/Users/kimhanju/Desktop/Project/Warmer/app/src/main/res/drawable/large.png"
     },
     {
         "merged": "/Users/kimhanju/Desktop/Project/Warmer/app/build/intermediates/res/merged/debug/color_abc_primary_text_disable_only_material_dark.xml.flat",
@@ -1562,6 +1590,10 @@
     {
         "merged": "/Users/kimhanju/Desktop/Project/Warmer/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_ic_star_half_black_36dp.png.flat",
         "source": "/Users/kimhanju/.gradle/caches/transforms-2/files-2.1/6d2125ed9e7c7554f58776d5ffe741a0/res/drawable-mdpi-v4/abc_ic_star_half_black_36dp.png"
+    },
+    {
+        "merged": "/Users/kimhanju/Desktop/Project/Warmer/app/build/intermediates/res/merged/debug/drawable_arc_man.png.flat",
+        "source": "/Users/kimhanju/Desktop/Project/Warmer/app/src/main/res/drawable/arc_man.png"
     },
     {
         "merged": "/Users/kimhanju/Desktop/Project/Warmer/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_ic_star_black_16dp.png.flat",
