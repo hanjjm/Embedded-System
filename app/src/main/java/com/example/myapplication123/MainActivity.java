@@ -137,10 +137,14 @@ public class MainActivity extends AppCompatActivity {
                 // Toast.makeText(getContext(), "AAA", Toast.LENGTH_SHORT);
               //  bt.send("1"+"P", true);
               //  bt.send(value+"A", true);
+                Toast.makeText(getApplicationContext(), "온도조절을 시작합니다. 설정온도 : "  + value + "도", Toast.LENGTH_LONG);
                 if(mThreadConnectedBluetooth != null) {
+                    Toast.makeText(getApplicationContext(), "온도조절을 시작합니다. 설정온도 : "  + value + "도", Toast.LENGTH_LONG);
                     mThreadConnectedBluetooth.write("1P");
                     mThreadConnectedBluetooth.write(value + "A");
+                    Toast.makeText(getApplicationContext(), "온도조절을 시작합니다. 설정온도 : " + value + "도", Toast.LENGTH_SHORT);
                 }
+
             }
         });
 
@@ -153,6 +157,7 @@ public class MainActivity extends AppCompatActivity {
                 if(mThreadConnectedBluetooth != null) {
                     mThreadConnectedBluetooth.write("2P");
                     mThreadConnectedBluetooth.write(value2 + "A");
+                    Toast.makeText(getApplicationContext(), "온도조절을 시작합니다. 설정온도 : " + value2 + "도", Toast.LENGTH_SHORT);
                 }
 
             }
@@ -167,7 +172,9 @@ public class MainActivity extends AppCompatActivity {
                 if(mThreadConnectedBluetooth != null) {
                     mThreadConnectedBluetooth.write("3P");
                     mThreadConnectedBluetooth.write(value3 + "A");
+                    Toast.makeText(getApplicationContext(), "온도조절을 시작합니다. 설정온도 : " + value3 + "도", Toast.LENGTH_SHORT);
                 }
+
             }
         });
 
@@ -219,20 +226,22 @@ public class MainActivity extends AppCompatActivity {
         nowtemper3 = findViewById(R.id.now_temper3);
 
 
-        mSeekBar.setProgress(35);
+        mSeekBar.setProgress(30);
        // mSeekBar.setMin(30);
-        mSeekBar.setMax(70);
+        //mSeekBar.setMax(50);
         //mSeekBar.setMin(10);
+        mSeekBar.setMax(50);
         value = String.valueOf(mSeekBar.getProgress());
         mTxtValue.setText("목표온도 : " + value + "도");
-
+        mSeekBar2.setMax(50);
         mSeekBar2.setProgress(30);
-        mSeekBar2.setMax(70);
+       // mSeekBar2.setMax(50);
+
         value2 = String.valueOf(mSeekBar2.getProgress());
         mTxtValue2.setText("목표온도 : " + value2 + "도");
-
+        mSeekBar3.setMax(50);
         mSeekBar3.setProgress(30);
-        mSeekBar3.setMax(70);
+     //   mSeekBar3.setMax(50);
         value3 = String.valueOf(mSeekBar3.getProgress());
         mTxtValue3.setText("목표온도 : " + value3 + "도");
 
@@ -247,12 +256,12 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onStartTrackingTouch(SeekBar seekBar) {
-                Toast.makeText(getApplicationContext(), "온도조절 시작합니다.", Toast.LENGTH_SHORT).show();
+            //    Toast.makeText(getApplicationContext(), "온도조절 시작합니다.", Toast.LENGTH_SHORT).show();
             }
 
             @Override
             public void onStopTrackingTouch(SeekBar seekBar) {
-                Toast.makeText(getApplicationContext(), "온도조절 끝났습니다.", Toast.LENGTH_SHORT).show();
+             //   Toast.makeText(getApplicationContext(), "온도조절 끝났습니다.", Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -267,12 +276,12 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onStartTrackingTouch(SeekBar seekBar) {
-                Toast.makeText(getApplicationContext(), "온도조절 시작합니다.", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(getApplicationContext(), "온도조절 시작합니다.", Toast.LENGTH_SHORT).show();
             }
 
             @Override
             public void onStopTrackingTouch(SeekBar seekBar) {
-                Toast.makeText(getApplicationContext(), "온도조절 끝났습니다.", Toast.LENGTH_SHORT).show();
+               // Toast.makeText(getApplicationContext(), "온도조절 끝났습니다.", Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -287,12 +296,12 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onStartTrackingTouch(SeekBar seekBar) {
-                Toast.makeText(getApplicationContext(), "온도조절 시작합니다.", Toast.LENGTH_SHORT).show();
+            //    Toast.makeText(getApplicationContext(), "온도조절 시작합니다.", Toast.LENGTH_SHORT).show();
             }
 
             @Override
             public void onStopTrackingTouch(SeekBar seekBar) {
-                Toast.makeText(getApplicationContext(), "온도조절 끝났습니다.", Toast.LENGTH_SHORT).show();
+              //  Toast.makeText(getApplicationContext(), "온도조절 끝났습니다.", Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -496,9 +505,11 @@ public class MainActivity extends AppCompatActivity {
             byte[] bytes = str.getBytes();
             try {
                 mmOutStream.write(bytes);
+                Toast.makeText(getApplicationContext(), "온도조절을 시작합니다.", Toast.LENGTH_SHORT).show();
             } catch (IOException e) {
                 Toast.makeText(getApplicationContext(), "데이터 전송 중 오류가 발생했습니다.", Toast.LENGTH_LONG).show();
             }
+
         }
         public void cancel() {
             try {
